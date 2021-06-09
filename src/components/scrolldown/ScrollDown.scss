@@ -1,0 +1,71 @@
+.container-scrolldown {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: 'Baloo Tammudu 2', cursive;
+    height:200px;
+    color: #fff;
+    span:nth-child(1){
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        animation: infinite-scrollText 3s infinite;
+        margin-left: 41px;
+    }
+    span:nth-child(2){
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        animation: infinite-scrollText 3s infinite ease-in-out;
+        margin-right: 41px;
+    }
+    span::after {
+        content: "";
+        height: 30px;
+        width: 1px;
+        border-radius: 1.925rem;
+        bottom: -35px;
+        background: #fff;
+        position: absolute;
+        margin-left: 8.2px;
+    }
+}
+
+@keyframes infinite-scrollText {
+    0% {
+        letter-spacing: -4px;
+    }
+    10% {
+        letter-spacing: -3px;
+    }
+    20% {
+        letter-spacing: -2px;
+    }
+    30% {
+        letter-spacing: -1px;
+    }
+    40% {
+        letter-spacing: 0px;
+    }
+    50% {
+        letter-spacing: 1px;
+    }
+    60% {
+        letter-spacing: 0px;
+    }
+    70% {
+        letter-spacing: -1px;
+    }
+    80% {
+        letter-spacing: -2px;
+    }
+    90% {
+        letter-spacing: -3px;
+    }
+    100% {
+        letter-spacing: -4px;
+    }
+}

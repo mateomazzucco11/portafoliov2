@@ -1,0 +1,25 @@
+.left {
+    position: fixed;
+    left: 41px;
+    width: 40px !important;
+    z-index: 5 !important;
+    ul {
+        li {
+            height: 4px !important;
+            width: 24px !important;
+            list-style: none;
+            margin-bottom: 40px !important;
+            a {
+                width: 24px !important;
+                height: 100%;
+                background: #fff;
+                display: block;
+                cursor: pointer;
+                border-radius: 2.125rem !important;
+            }
+            a.active{
+                width: 40px !important;
+            }
+        }
+    }
+}
