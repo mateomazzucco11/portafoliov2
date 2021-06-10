@@ -7,6 +7,8 @@ import About from '../../pages/about/About';
 import Project from '../../pages/projects/Project';
 import Contact from '../../pages/contact/Contact';
 
+import BackgroundAll from '../../components/background/BackgroundAll';
+
 
 class Fullpagescroll extends React.Component {
     render() {
@@ -16,6 +18,7 @@ class Fullpagescroll extends React.Component {
             render={({ state }) => {
                 return (
                 <>
+                    <BackgroundAll />
                     <div className='section section1' id='Home'>
                         <Home />
                     </div>

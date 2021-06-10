@@ -1,23 +1,27 @@
 import React from 'react';
 import './Search.scss';
 
+import { Link } from 'react-scroll'
+
 export default class SearchNav extends React.Component {
+    
+
 
     render(){
         return (
-            <div id='fp-nav' class='left'>
+            <div className='search-nav-left'>
                 <ul>
                     <li>
-                        <a href="#section1"></a>
+                        <Link to='Home' spy={true} smooth={true} activeClass='active'></Link>
                     </li>
                     <li>
-                        <a href="#section2"></a>
+                        <Link to='About' spy={true} smooth={true} activeClass='active' ></Link>
                     </li>
                     <li>
-                        <a href='#section3'></a>
+                        <Link to='Project' spy={true} smooth={true} activeClass='active' ></Link>
                     </li>
                     <li>
-                        <a href='#section4'></a>
+                        <Link to='Contact' spy={true} smooth={true} activeClass='active' ></Link>
                     </li>
                 </ul>
             </div>

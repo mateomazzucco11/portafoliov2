@@ -8,7 +8,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
 
-import {Animated} from "react-animated-css";
+
 
 export default class Navbar extends Component {
 
@@ -40,57 +40,49 @@ render(){
                         <div className='bar-three rounded'></div>
                     </div>
                 </div>
-                <Animated 
-                        isVisible={this.state.status}
-                        animationInDuration={500} 
-                        animationOutDuration={1000}
-                        animationInDelay={500}
-                        animationOutDelay={500}
-                    >
-                    <nav className={`container-nav out ${this.props.className}`} id='nav-open'>
-                            <div className='section one'>
-                                <p className='h1'>mateo</p>
-                                <div>
-                                    <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
-                                        <FaLinkedinIn />
-                                    </a>
-                                    <a href='https://twitter.com/MazzuccoMateo' target='_blank'>
-                                        <FiTwitter />
-                                    </a>
-                                    <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
-                                        <SiInstagram />
-                                    </a>
-                                    <a href='https://github.com/mateomazzucco11' target='_blank'>
-                                        <FaGithub />
-                                    </a>
-                                </div>
+                <nav className={`container-nav out ${this.props.className}`} id='nav-open'>
+                        <div className='section one'>
+                            <p className='h1'>mateo</p>
+                            <div>
+                                <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
+                                    <FaLinkedinIn />
+                                </a>
+                                <a href='https://twitter.com/MazzuccoMateo' target='_blank'>
+                                    <FiTwitter />
+                                </a>
+                                <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
+                                    <SiInstagram />
+                                </a>
+                                <a href='https://github.com/mateomazzucco11' target='_blank'>
+                                    <FaGithub />
+                                </a>
                             </div>
-                            <div className='section two'>
-                                <div>
-                                    <div className='contact-cv'>
-                                        <BrowserRouter>
-                                            <Route>
-                                                <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
-                                            </Route>
-                                        </BrowserRouter>
-                                    </div>
-                                    <p>See my summary.</p>
+                        </div>
+                        <div className='section two'>
+                            <div>
+                                <div className='contact-cv'>
+                                    <BrowserRouter>
+                                        <Route>
+                                            <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
+                                        </Route>
+                                    </BrowserRouter>
                                 </div>
-                                <div>
-                                    <a href='#'>About</a>
-                                    <p>Get to know me.</p>
-                                </div>
-                                <div>
-                                    <a href='#'>Project's</a>
-                                    <p>Things I've done.</p>
-                                </div>
-                                <div>
-                                    <a href='#'>Contact me</a>
-                                    <p>Come contact me.</p>
-                                </div>
+                                <p>See my summary.</p>
                             </div>
-                    </nav>
-                </Animated>
+                            <div>
+                                <a href='#'>About</a>
+                                <p>Get to know me.</p>
+                            </div>
+                            <div>
+                                <a href='#'>Project's</a>
+                                <p>Things I've done.</p>
+                            </div>
+                            <div>
+                                <a href='#'>Contact me</a>
+                                <p>Come contact me.</p>
+                            </div>
+                        </div>
+                </nav>
             </>
         )
     }
