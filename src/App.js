@@ -6,8 +6,10 @@ import Header from './pages/header/Header';
 import About2 from './pages/about/About2';
 import Fullpagescroll from './components/fullpagescrol/Fullpagescroll';
 import SearchNav from './pages/header/search/SearchNav'
+import Project2 from './pages/projects/Project2';
 
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
+
 
 
 export default function App() {
@@ -26,6 +28,13 @@ export default function App() {
         <Switch>
           <Route path='/about'>
             <About2 />
+          </Route>
+        </Switch>
+      </Router>
+      <Router>
+        <Switch>
+          <Route path='/project'>
+            <Project2 />
           </Route>
         </Switch>
       </Router>

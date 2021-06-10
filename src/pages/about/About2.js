@@ -1,13 +1,26 @@
 import React from 'react'
 import './About2.scss'
 
+import {BrowserRouter, Route, Link} from 'react-router-dom'
+
 import imageAbout from '../../images/about-image.jpg'
 import imageMe from '../../images/mee.jpg'
-
 import travelImg from '../../images/travel.png'
 import codeImg from '../../images/code.png'
 import technologyImg from '../../images/technology.png'
 import gamesImg from '../../images/games.png'
+import cssSkill from '../../images/css.png'
+import reactSkill from '../../images/react.png'
+import githubSkill from '../../images/github.png'
+import htmlSkill from '../../images/html.png'
+import jsSkill from '../../images/js.png'
+import linuxSkill from '../../images/linux.png'
+import sassSkill from '../../images/sass.png'
+
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FiTwitter } from 'react-icons/fi';
+import { SiInstagram } from 'react-icons/si';
+import { FcDownload } from 'react-icons/fc';
 
 export default function About2() {
     return (
@@ -80,6 +93,78 @@ export default function About2() {
                             </div>
                         </div>
                     </div>
+                </section>
+                <section className='four-about-section'>
+                    <div className='max-width'>
+                        <div className='about-section-top'>
+                            <h2>skill <span>set</span></h2>
+                        </div>
+                        <div className='about-section-bottom'>
+                            <div className='container-skills'>
+                                <ul>
+                                    <li>
+                                        <div><img src={htmlSkill} /></div>
+                                        <h2>HTML</h2>
+                                    </li>
+                                    <li>
+                                        <div><img src={cssSkill} /></div>
+                                        <h2>CSS</h2>
+                                    </li>
+                                    <li>
+                                        <div><img src={jsSkill} /></div>
+                                        <h2>Javascript</h2>
+                                    </li>
+                                    <li>
+                                        <div><img src={sassSkill} /></div>
+                                        <h2>Sass</h2>
+                                    </li>
+                                    <li>
+                                        <div><img src={reactSkill} /></div>
+                                        <h2>React js</h2>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div><img src={linuxSkill} /></div>
+                                        <h2>Linux</h2>
+                                    </li>
+                                    <li>
+                                        <div><img src={githubSkill} /></div>
+                                        <h2>GitHub</h2>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <BrowserRouter>
+                            <Route>
+                                <div>
+                                    <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'><div><span><FcDownload /></span></div> Resume</Link>
+                                </div>
+                            </Route>
+                        </BrowserRouter>
+                        <div>
+                            <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
+                                <FaLinkedinIn />
+                            </a>
+                        </div>
+                        <div>
+                            <a href='https://twitter.com/MazzuccoMateo' target='_blank'>
+                                <FiTwitter />
+                            </a>
+                        </div>
+                        <div>
+                            <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
+                                <SiInstagram />
+                            </a>
+                        </div>
+                        <div>
+                            <a href='https://github.com/mateomazzucco11' target='_blank'>
+                                <FaGithub />
+                            </a>
+                        </div>
+                    </footer>
                 </section>
             </div>
         </div>
