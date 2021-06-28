@@ -1,3 +1,5 @@
+@import '../../../styles/Animation.scss';
+
 .container.navbar {
     position: fixed;
     right: 41px;
@@ -46,36 +48,40 @@
 
 .hamburger-icon.active {
     .bar-one {
-        transform: rotate(35deg);
+        transform: rotate(55deg);
         position: absolute;
-        bottom: 10px;
+        top: 18px;
         margin-left: 0;
+        left: 8px;
     }
     .bar-two {
         position: absolute;
-        left: 5px;
+        animation: bar-two-left .5s 0.15s forwards;
     }
     .bar-three {
-        transform: rotate(145deg);
+        transform: rotate(125deg);
         position: absolute;
-        top: 10px;
+        top: 18px;
+        left: 8px;
     }
 }
 
+
 .container-nav {
-    opacity: 0;
     visibility: hidden;
+    position: relative;
 }
 
-.container-nav.active {
+.container-nav.out.active {
     visibility: visible;
     width: 100%;
     height: 100vh;
-    background: #63666b;
+    background: #000000;
     z-index: 10;
-    opacity: 1;
     margin: 0;
     position: relative;
+    animation: animation-navopen 1s 0s forwards;
+    animation-timing-function: ease;
     .section.one {
         opacity: 1;
         height: 45%;
@@ -141,7 +147,7 @@
             
         }
         div:nth-child(2), div:nth-child(3){
-            background: #63666b;
+            background: #535353;
             filter: brightness(70%);
             opacity: 1;
             a {

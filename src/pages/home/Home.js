@@ -2,21 +2,19 @@ import React from 'react'
 
 import './Home.scss'
 
-import ScrollDown from '../../components/scrolldown/ScrollDown';
 import imageHome from '../../images/home-image.png'
 
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
+import BackgroundAll from '../../components/background/BackgroundAll';
 
 
 
 export default function Home() {
     return (
         <>
-            <>
-                <ScrollDown />
-            </>
+            <BackgroundAll />
             <div className='container-home'>
                 <div className='container-hi'>
                     <p id='canvas'>Hi there 👋, i'm</p>
@@ -40,8 +38,9 @@ export default function Home() {
                         <FaGithub />
                     </a>
                 </div>
-                <div className='image-home'>
-                    <img src={ imageHome } />
+                <div className='container-scrolldown'>
+                    <div><span>scroll down</span></div>
+                    <div><span>scroll down</span></div>
                 </div>
             </div>
         </>

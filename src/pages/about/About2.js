@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './About2.scss'
 
 import {BrowserRouter, Route, Link} from 'react-router-dom'
@@ -23,6 +23,7 @@ import { SiInstagram } from 'react-icons/si';
 import { FcDownload } from 'react-icons/fc';
 
 export default function About2() {
+    
     return (
         <div className='aboutMe max-width' id='about-open'>
             <div className='container-aboutMe'>
@@ -51,7 +52,7 @@ export default function About2() {
                             <div className='line'></div>
                             <div className='line2'></div>
                             <div>
-                                <p>Born in Argentina, Cordoba, Jesus Maria. After finishing high school, I started Systems Engineering for personal reasons. <br></br>And I started working in construction, after 2 years decided to leave and dedicate myself totally to what I like, which is programming. <br></br> Started studying Computer Science Degree again and I'm looking for my first job as a frontend developer.</p>
+                                <p>Born in Argentina, Cordoba, Jesus Maria. After finishing high school, I started Systems Engineering for personal reasons I left. <br></br>And I started working in construction, after 2 years decided to leave and dedicate myself totally to what I like, which is programming. <br></br> Started studying Computer Science Degree again and I'm looking for my first job as a Frontend Developer.</p>
                                 <img src={imageMe} />
                             </div>
                         </div>
@@ -67,28 +68,28 @@ export default function About2() {
                                 <img src={codeImg} />
                                 <h2>Coding</h2>
                                 <div>
-                                    <p>agsddag asdgsadadgas asfgasfgasfgafg sgasdga sgdsag ijmsf pofophmsp dasdgasdggasgdsagds</p>
+                                    <p>I love writing code, I don't understand why I didn't get started before. I am excited about the idea that I can translate what I feel or think, as well as working as a team.</p>
                                 </div>
                             </div>
                             <div className='passion 2'>
                                 <img src={technologyImg} />
                                 <h2>Technology</h2>
                                 <div>
-                                    <p>adgasdg agda gads gag das gagd asgag asgas</p>
+                                    <p>Since I was a kid I like technology, passionate about seeing what is coming out and always being updated.</p>
                                 </div>
                             </div>
                             <div className='passion 3'>
                                 <img src={travelImg} />
                                 <h2>Travel</h2>
                                 <div>
-                                    <p> sdhdsh sdh sdfhsdhfsdhsdhsdhffshsdfhsdhsd </p>
+                                    <p>Why travel? Because I like to know what other cultures are like, to know and learn what life is like elsewhere. For later to be able to implement it in my attitudes</p>
                                 </div>
                             </div>
                             <div className='passion 4'>
                                 <img src={gamesImg} />
                                 <h2>Play Games</h2>
                                 <div>
-                                    <p> sdhf sdhsdh sdhfs hsfd hsdfh sdhshs dfhshs dhsdfh sdh</p>
+                                    <p>Also other of my great passions, now I am away because I want to improve as a programmer. But I am excited to play, to compete and be the best. It teaches you a lot of things like teamwork, learning when we lose, learning to communicate and many other things.</p>
                                 </div>
                             </div>
                         </div>
@@ -103,33 +104,33 @@ export default function About2() {
                             <div className='container-skills'>
                                 <ul>
                                     <li>
-                                        <div><img src={htmlSkill} /></div>
+                                        <div><img src={htmlSkill} title='HTML'/></div>
                                         <h2>HTML</h2>
                                     </li>
                                     <li>
-                                        <div><img src={cssSkill} /></div>
+                                        <div><img src={cssSkill} title='CSS'/></div>
                                         <h2>CSS</h2>
                                     </li>
                                     <li>
-                                        <div><img src={jsSkill} /></div>
+                                        <div><img src={jsSkill} title='JavaScript' /></div>
                                         <h2>Javascript</h2>
                                     </li>
                                     <li>
-                                        <div><img src={sassSkill} /></div>
+                                        <div><img src={sassSkill} title='SASS'/></div>
                                         <h2>Sass</h2>
                                     </li>
                                     <li>
-                                        <div><img src={reactSkill} /></div>
+                                        <div><img src={reactSkill} title='React.js'/></div>
                                         <h2>React js</h2>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li>
-                                        <div><img src={linuxSkill} /></div>
+                                        <div><img src={linuxSkill} title='Linux'/></div>
                                         <h2>Linux</h2>
                                     </li>
                                     <li>
-                                        <div><img src={githubSkill} /></div>
+                                        <div><img src={githubSkill} title='GitHub'/></div>
                                         <h2>GitHub</h2>
                                     </li>
                                 </ul>

@@ -1,19 +1,26 @@
 .content-img {
-    background-color: #000;
+    background: #000123;
     width: 100%;
-    height: 441vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     position: absolute;
-    z-index: 0;
+    z-index: -7;
     li{
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 441vh;
-            position: absolute;
-            opacity: .5;
-            z-index: -1;
+        width: 100%;
+        div {
+            img {
+                top: -145px;
+                width: 65%;
+                object-fit: cover;
+                direction: rtl;
+                margin: 0;
+                padding: 0;
+                opacity: 1;
+                z-index: -6;
+                position: absolute;
+                right: 30px;
+            }
         }
     }
 }

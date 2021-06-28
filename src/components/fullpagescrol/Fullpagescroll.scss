@@ -1,0 +1,41 @@
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
+    background-color: chartreuse;
+}
+
+.fp-right ul li a span {
+    background: #ffffff !important;
+}
+
+#fp-nav.fp-right {
+    left: 30px;
+    right:inherit;
+    ul{
+        li {
+            a {
+                height: 4px;
+                span {
+                    width: 26px;
+                    border-radius: 5px;
+                    height: 4px;
+                    margin: -2px 0 0 -2px;
+                }
+                span:hover {
+                    height: 4px;
+                    width: 33px;
+                    margin: -2px 0 0 -2px;
+                }
+            }
+            a.active {
+                span {
+                    width: 40px;
+                    border-radius: 5px;
+                    height: 4px;
+                    margin: -2px 0 0 -2px;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@import '../../styles/Animation.scss';
 .aboutMe {
     visibility: visible;
     width: 100%;
@@ -11,7 +12,7 @@
     .first-about-section {
         height: 100vh;
         width: 100%;
-        background: #000;
+        background: #000123;
         .about-section-left {
             height: 100%;
             .title.about-me {
@@ -27,6 +28,8 @@
                     font-weight: bold;
                     position: absolute;
                     color: #fff;
+                    top: 0;
+                    opacity: 1;
                 }
                 .line {
                     height: 4px;
@@ -34,38 +37,41 @@
                     width: 190px;
                     background: #179fcd;
                     position: absolute;
-                    top: 350px
+                    top: 250px;
+                    opacity: 1;
                 }
                 .line2 {
                     height: 4px;
                     border-radius: 12px;
+                    top: 265px;
+                    opacity: 1;
+                    left: 160px;
                     width: 190px;
                     background: #179fcd;
                     position: absolute;
-                    top: 365px;
-                    left: 160px;
                 }
                 p {
                     position: absolute;
-                    top: 420px;
                     font-size: 28px;
                     font-weight: bold;
                     width: 55%;
+                    top: 350px;
                     color: #fff;
+                    z-index: 5;
                 }
             }
         }
         .about-section-right {
-            width: 50%;
-            height: 100vh;
+            animation: animation-about .6s 0s forwards;
             position: absolute;
-            right: 0;
-            top: 0;
+            animation-timing-function: ease-out;
+            background: #000123;
             img {
                 position: absolute;
                 object-fit: cover;
                 width: 100%;
-                height: 100vh;
+                height: 100%;
+                opacity: .8;
             }
         }
         span {
@@ -96,7 +102,7 @@
 
 
     .second-about-section {
-        background: #fff;
+        background: #f3f3f3f3;
         width: 100%;
         height: 100vh;
         margin-top: 200px;
@@ -166,7 +172,6 @@
         }
     }
 
-
     .three-about-section {
         background: #fff;
         width: 100%;
@@ -189,7 +194,7 @@
         .about-section-bottom {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            width: 70%;
+            width: 80%;
             height: 85%;
             margin-left: 240px;
             .passion {
@@ -302,9 +307,10 @@
             bottom: 0px;
             width: 100%;
             height: 80px;
-            background: #000;
+            background: #000123;
             display: flex;
             justify-content: space-around;
+            opacity: 1;
             div{
                 display: flex;
                 align-items: center;
@@ -315,11 +321,14 @@
                     text-decoration: none;
                     font-size: 22px;
                     text-transform: uppercase;
-                    color: #179fcd;
+                    color: #ffffff;
                     align-items: center;
                     svg {
                         font-size: 26px;
                     }
+                }
+                a:hover {
+                    color: #179fcd;
                 }
             }
             div:nth-child(1) {
@@ -327,11 +336,9 @@
                 padding-left: 70px;
                 span {
                     position: absolute;
-                    left: 220px;
-                    top: 26px;
-                    svg {
-                        border: 1px solid #179fcd;
-                    }
+                    left: 270px;
+                    top: 30px;
+                    
                 }
             }
         }

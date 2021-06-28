@@ -1,3 +1,5 @@
+@import '../../styles/Animation.scss';
+
 .image.image-project {
     position: absolute;
     width: 50%;
@@ -5,15 +7,17 @@
     right: 120px;
     z-index: 5;
     top: 180px;
+    background: #000123;
     img {
         object-fit:cover;
         width: 100%;
         height: 100%;
         position: absolute;
+        opacity: .7;
     }
 }
 
-.title.project {
+.title.project-first {
     width: 50%;
     height: 100%;
     position: absolute;
@@ -26,6 +30,8 @@
         font-size: 180px;
         font-weight: bold;
         position: absolute;
+        animation: animation-one 3s .8s forwards;
+        animation-timing-function: ease;
     }
     .line {
         height: 4px;
@@ -33,7 +39,9 @@
         width: 190px;
         background: #179fcd;
         position: absolute;
-        top: 410px
+        top: 410px;
+        animation: animation-one 2.4s .8s forwards;
+        animation-timing-function: ease;
     }
     .line2 {
         height: 4px;
@@ -43,6 +51,8 @@
         position: absolute;
         top: 425px;
         left: 160px;
+        animation: animation-line2 2.8s .8s forwards;
+        animation-timing-function: ease;
     }
     p {
         position: absolute;
@@ -50,6 +60,8 @@
         font-size: 22px;
         font-weight: bold;
         width: 45%;
+        animation: animation-one 3.2s .8s forwards;
+        animation-timing-function: ease;
     }
     a {
         position: absolute;
@@ -66,5 +78,7 @@
         font-size: 16px;
         font-weight: bold;
         box-shadow: 0px 0px 16px #fff;
+        animation: animation-one 3.6s .8s forwards;
+        animation-timing-function: ease;
     }
 }

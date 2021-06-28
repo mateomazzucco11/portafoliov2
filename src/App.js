@@ -5,39 +5,30 @@ import './styles/Fonts.scss'
 import Header from './pages/header/Header';
 import About2 from './pages/about/About2';
 import Fullpagescroll from './components/fullpagescrol/Fullpagescroll';
-import SearchNav from './pages/header/search/SearchNav'
 import Project2 from './pages/projects/Project2';
 
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 
 export default function App() {
   return(
     <>
-      <Header />
-      <SearchNav />
       <Router>
+      <Header />
         <Switch>
-          <Route path='/12'>
+          <Route path='/' exact>
             <Fullpagescroll />
           </Route>
-        </Switch>
-      </Router>
-      <Router>
-        <Switch>
-          <Route path='/about'>
+          <Route path='/about' exact>
             <About2 />
           </Route>
-        </Switch>
-      </Router>
-      <Router>
-        <Switch>
-          <Route path='/project'>
+          <Route path='/project' exact>
             <Project2 />
           </Route>
         </Switch>
       </Router>
+      
     </>
   )
 }

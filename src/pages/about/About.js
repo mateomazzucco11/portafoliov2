@@ -4,13 +4,15 @@ import '../../styles/Palete.scss';
 
 import imageAbout from '../../images/about-image.jpg'
 
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import BackgroundAll from '../../components/background/BackgroundAll';
 
 export default class About extends React.Component {
 
     render (){
         return (
-            <Router>
+            <>
+                <BackgroundAll />
                 <div className='max-width' >
                     <div className='title about'>
                         <h2>About Me</h2>
@@ -25,7 +27,7 @@ export default class About extends React.Component {
                         <img src={ imageAbout } />
                     </Link>
                 </div>
-            </Router>
+            </>
         )
     }
 }

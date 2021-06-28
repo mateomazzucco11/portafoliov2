@@ -1,3 +1,5 @@
+@import '../../styles/Animation.scss';
+
 .container-home {
     display: flex;
     width: 100%;
@@ -79,22 +81,72 @@
         }
     }
     .contact-home {
-        width: 600px;
-        
-        margin-top: 60px;
+        width: 540px;
+        height: 50px;
+        z-index: 20;
         font-size: 48px;
+        position: absolute;
+        top: 670px;
         a{
             margin-left: 110px;
+            cursor: pointer;
             color: #fff;
         }
         a:nth-child(1){
             margin-left: -10px;
         }
+        a:hover {
+            color: #179fcd;
+        }
     }
 }
 
-.container-mouse-move {
-    position: absolute;
-    width: 80%;
-    height: 100%;
+
+.container-scrolldown {
+    width: 100%;
+    font-weight: bold;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: 'Baloo Tammudu 2', cursive;
+    height:200px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    div {
+        height: 100%;
+        width: 100%;        
+    }
+    div:nth-child(1){
+        position: relative;
+        bottom: -132px;
+        left: -320px;
+    }
+    div:nth-child(2){
+        position: relative;
+        bottom: -134px;
+        left: -60px;
+    }
+    div span:nth-child(1){
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        margin-top: -26px;
+        
+    }
+    div span:nth-child(2){
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        margin-top: -26px;
+    }
+    div span::after {
+        content: "";
+        height: 30px;
+        width: 1px;
+        border-radius: 1.925rem;
+        bottom: 0px;
+        background: #fff;
+        position: absolute;
+        margin-left: 8.2px;
+    }
 }
+

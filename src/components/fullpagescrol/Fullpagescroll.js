@@ -1,42 +1,40 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import React from 'react';
-import "fullpage.js/vendors/scrolloverflow"; 
+
+import './Fullpagescroll.scss'
 
 import Home from '../../pages/home/Home'
 import About from '../../pages/about/About';
 import Project from '../../pages/projects/Project';
 import Contact from '../../pages/contact/Contact';
 
-import BackgroundAll from '../../components/background/BackgroundAll';
 
 
-class Fullpagescroll extends React.Component {
-    render() {
-        return (
-            <ReactFullpage
-            scrollOverflow={true}
-            render={({ state }) => {
+const Fullpagescroll = () =>{
+    return (
+        <ReactFullpage
+            scrollingSpeed = {1150}
+            navigation
+            render={() => {
                 return (
                 <>
-                    <BackgroundAll />
-                    <div className='section section1' id='Home'>
+                    <div className='section'>
                         <Home />
                     </div>
-                    <div className='section section2' id='About'>
+                    <div className='section'>
                         <About />
                     </div>
-                    <div className='section section3' id='Project'>
+                    <div className='section'>
                         <Project />
                     </div>
-                    <div className='section section4' id='Contact'>
+                    <div className='section'>
                         <Contact />
                     </div>
                 </>
                 );
             }}
-            />
-        );
-    }
+        />
+    );
 }
 
 export default Fullpagescroll;
