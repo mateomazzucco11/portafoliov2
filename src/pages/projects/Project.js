@@ -12,18 +12,22 @@ export default function Project() {
         <>
             <BackgroundAll />
             <div className='max-width'>
-                <div className='title project-first'>
-                    <h2>Project</h2>
-                    <div className='line'></div>
-                    <div className='line2'></div>
-                    <p>Projects i Did</p>
-                    <div>
+                <div className='left-content project'>
+                    <div className='title'>
+                        <h2>Project</h2>
+                    </div>
+                    <div className='content-text'>
+                        <p>Projects i Did</p>
+                    </div>
+                    <div className='content-button'>
                         <Link to='/project'>See projects</Link>
                     </div>
                 </div>
-                <Link to='/project' className='image image-project' >
-                    <img src={ imageProject } />
-                </Link>
+                <div className='right-image'>
+                    <Link to='/project'>
+                        <img src={ imageProject } />
+                    </Link>
+                </div>
             </div>
         </>
     )

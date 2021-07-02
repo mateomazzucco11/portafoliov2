@@ -12,52 +12,15 @@
         width: 100%;
         height: 100vh;
         z-index: 8;
-        .project-left {
-            width: 50%;
-            .title.project{
-                width: 50%;
-                height: 87.3vh;
-                position: absolute;
-                top: 120px;
-                left: 350px;
-                font-family: 'Baloo Tammudu 2', cursive;
-                h2 {
-                    z-index: 6;
-                    font-size: 210px;
-                    font-weight: bold;
-                    position: absolute;
-                    color: #fff;
-                    left: -18px;
-                }
-                .line {
-                    height: 4px;
-                    border-radius: 12px;
-                    width: 190px;
-                    background: #179fcd;
-                    position: absolute;
-                    top: 330px
-                }
-                .line2 {
-                    height: 4px;
-                    border-radius: 12px;
-                    width: 190px;
-                    background: #179fcd;
-                    position: absolute;
-                    top: 345px;
-                    left: 160px;
-                }
-                p {
-                    font-size: 32px;
-                    position: absolute;
-                    top: 440px;
-                    color: #fff;
-                }
-            }
+        .left-content.project.two {
+            margin-left: 4px;
+            margin-top: -62px;
         }
         .project-right {
             position: absolute;
-            animation: animation-project 1s 0s forwards;
-            animation-timing-function: ease-out;
+            width: 59.7%;
+            height: 100%;
+            right: 0;
             background: #000123;
                 img{
                 width: 100%;
@@ -65,29 +28,34 @@
                 opacity: .8;
                 }
         }
-        span {
+        .scroll-down {
             display: flex;
+            flex-direction: row;
             position: absolute;
-            top: 643px;
-            left: 35px;
-            color: #fff;
-            font-size: 12px;
-            font-weight: bold;
-            height:250px;
-            writing-mode: vertical-lr;
-            text-orientation: upright;
-            animation: infinite-scrollText 3s infinite;
-            font-family: 'Baloo Tammudu 2', cursive;
-        }
-        span::after {
-            content: "";
-            height: 30px;
-            width: 1px;
-            border-radius: 1.925rem;
-            bottom: -55px;
-            background: #fff;
-            position: absolute;
-            margin-left: 12.7px;
+            bottom: 0;
+            left: 5px;
+            span {
+                color: #fff;
+                font-size: 12px;
+                font-weight: bold;
+                height:250px;
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                animation: infinite-scrollText 3s infinite;
+                font-family: 'Baloo Tammudu 2', cursive;
+                margin-top: -300px;
+            }
+            span::after {
+                content: "";
+                height: 30px;
+                width: 1px;
+                border-radius: 1.925rem;
+                background: #fff;
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                left: 12px;
+            }
         }
     }
     .second-project-section {
@@ -128,45 +96,47 @@
                         height: 100%;
                         li {
                             div {
+                                position: relative;
                                 img {
                                     object-fit: cover;
                                     width: 100%;
                                     height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
                                 }
                                 div {
-                                    a:nth-child(1){
-                                        position: absolute;
-                                        bottom: 15px;
-                                        left: 950px;
-                                        height: 32px;
-                                        text-decoration: none;
-                                        color: #fff;
-                                        border: 2px solid #179fcd;
+                                    position: absolute;
+                                    bottom: 8px;
+                                    width: 100%;
+                                    height: 12%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    align-content: center;
+                                    div {
+                                        border-radius: 6px;
+                                        padding: 10px;
+                                        width: fit-content;
+                                        height: fit-content;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        align-content: center;
+                                        width: 140px;
                                         background: #179fcd;
-                                        width: 10%;
-                                        border-radius: 50px;
-                                        text-align: center;
-                                        font-size: 16px;
-                                        font-weight: bold;
-                                        box-shadow: 0px 0px 16px #fff;
-                                        text-transform: uppercase;
+                                        a{
+                                            text-align: center;
+                                            height: 100%;
+                                            color: #fff;
+                                            
+                                        }
                                     }
-                                    a:nth-child(2){
-                                        position: absolute;
-                                        bottom: 15px;
-                                        height: 32px;
-                                        text-decoration: none;
-                                        color: #fff;
-                                        border: 2px solid #179fcd;
-                                        background: #179fcd;
-                                        width: 10%;
-                                        border-radius: 50px;
-                                        text-align: center;
-                                        font-size: 16px;
-                                        font-weight: bold;
-                                        box-shadow: 0px 0px 16px #fff;
-                                        left: 750px;
-                                        text-transform: uppercase;
+                                    div:nth-child(1) {
+                                        left: 360px;
+                                    }
+                                    div:nth-child(2) {
+                                        left: 510px;
                                     }
                                 }
                             }

@@ -5,13 +5,9 @@ import Logo from './logo/Logo'
 import Navbar from './navbar/Navbar'
 
 
-export default function Header() {
-
-    
-
-
+export default function Header({ className }) {
     return (
-        <header className='container header'>
+        <header className={`container header ${className}`}>
             <Logo />
             <Navbar />
         </header>

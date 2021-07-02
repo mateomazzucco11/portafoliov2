@@ -1,152 +1,47 @@
 @import '../../styles/Animation.scss';
 
-.container-home {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    padding-left: 360px;
-    padding-top: 200px;
-    .image-home {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        right: 0px;
-        z-index: 5;
-        top: 0px;
-        img {
-            object-fit:cover;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-    }
-    
-    .container-hi{
-        width: 400px;
-        p{
-            font-size: 38px;
-            font-weight: bold;
-            text-transform: uppercase;
-            width: fit-content;
-            padding: 0;
-            margin: 0;
-            font-family: 'Baloo Tammudu 2', cursive;
-            transition: all .5s;
+.left-content.home {
+    .title {
+        margin-right: 140px;
+        p {
             color: #fff;
-        }
-    }
-    .line {
-        height: 4px;
-        border-radius: 12px;
-        width: 190px;
-        background: #179fcd;
-        position: absolute;
-        top: 475px
-    }
-    .line2 {
-        height: 4px;
-        border-radius: 12px;
-        width: 190px;
-        background: #179fcd;
-        position: absolute;
-        top: 490px;
-        left: 520px;
-    }
-    .container-me {
-        width: 700px;
-        margin-top: -60px;
-        .h1{
-            font-weight: bold;
-            font-size: 208px;
-            letter-spacing: -6.6px;
-            font-family: 'Nunito', sans-serif;
-            user-select: none;
-            display: block;
-            margin-left: -20px;
-            color: #fff;
-            margin-bottom: 40px;
-        }
-        .h2 {
-            margin-top: 200px;
             font-size: 30px;
-            text-transform: uppercase;
-            font-weight: bold;
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: -80px;
+        }
+        h1 {
+            font-size: 180px;
             color: #fff;
-            font-family: 'Baloo Tammudu 2', cursive;
-            margin-left: -10px;
-            span {
-                font-size: 26px;
-            }
+            letter-spacing: -19px;
+            height: 300px;
+        }
+        h2 {
+            font-size: 25px;
+            margin-left: -150px;
+        }
+        h2::before {
+            bottom: 100px;
+            left: 12px;
+        }
+        h2::after {
+            bottom: 85px;
+            right: -45px;
         }
     }
-    .contact-home {
-        width: 540px;
-        height: 50px;
-        z-index: 20;
-        font-size: 48px;
-        position: absolute;
-        top: 670px;
+    .social-media {
+        width: 555.13px;
+        margin-top: 30px;
+        margin-left: -203px;
+        z-index: 10;
         a{
-            margin-left: 110px;
-            cursor: pointer;
+            font-size: 40px;
             color: #fff;
-        }
-        a:nth-child(1){
-            margin-left: -10px;
+            padding-left: 90px;
+            transition: ease-in-out .25s;
         }
         a:hover {
             color: #179fcd;
         }
     }
 }
-
-
-.container-scrolldown {
-    width: 100%;
-    font-weight: bold;
-    font-size: 8px;
-    text-transform: uppercase;
-    font-family: 'Baloo Tammudu 2', cursive;
-    height:200px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    div {
-        height: 100%;
-        width: 100%;        
-    }
-    div:nth-child(1){
-        position: relative;
-        bottom: -132px;
-        left: -320px;
-    }
-    div:nth-child(2){
-        position: relative;
-        bottom: -134px;
-        left: -60px;
-    }
-    div span:nth-child(1){
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        margin-top: -26px;
-        
-    }
-    div span:nth-child(2){
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        margin-top: -26px;
-    }
-    div span::after {
-        content: "";
-        height: 30px;
-        width: 1px;
-        border-radius: 1.925rem;
-        bottom: 0px;
-        background: #fff;
-        position: absolute;
-        margin-left: 8.2px;
-    }
-}
-

@@ -1,92 +1,12 @@
-@import '../../styles/Animation.scss';
-
-.image.image-about {
-    position: absolute;
-    width: 50%;
-    height: 65vh;
-    right: 120px;
-    z-index: 5;
-    top: 180px;
-    opacity: 1;
-    background: #000123;
-    img {
-        z-index: 1;
-        object-fit:cover;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        cursor: pointer;
-        opacity: .7;
-    }
-}
-
-.title.about {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 140px;
-    left: 350px;
-    font-family: 'Baloo Tammudu 2', cursive;
-    z-index: 6;
-    h2 {
-        font-size: 150px;
-        font-weight: bold;
-        position: absolute;
-        color: #fff;
-        animation: animation-one 2s .8s forwards;
-        animation-timing-function: ease;
-    }
-    .line {
-        height: 4px;
-        border-radius: 12px;
-        width: 190px;
-        background: #179fcd;
-        position: absolute;
-        top: 350px;
-        animation: animation-one 2.4s .8s forwards;
-        animation-timing-function: ease;
-    }
-    .line2 {
-        height: 4px;
-        border-radius: 12px;
-        width: 190px;
-        background: #179fcd;
-        position: absolute;
-        top: 365px;
-        left: 160px;
-        animation: animation-line2 2.8s 1.1s forwards;
-        animation-timing-function: ease;
-    }
-    p {
-        position: absolute;
-        top: 420px;
-        font-size: 22px;
-        font-weight: bold;
-        width: 45%;
-        color: #fff;
-        animation: animation-one 3.2s .8s forwards;
-        animation-timing-function: ease;
-    }
-    div {
-        a{
-            position: absolute;
-            height: 42px;
-            top: 550px;
-            text-decoration: none;
-            color: #fff;
-            border: 2px solid #179fcd;
-            background: #179fcd;
-            padding: 5px 12px;
-            width: 25%;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            box-shadow: 0px 0px 16px #fff;
-            cursor: pointer;
-            animation: animation-one 3.6s .8s forwards;
-            animation-timing-function: ease;
+.left-content.about {
+    margin-left: 10px;
+    .title {
+        margin-left: 175px;
+        h2::after {
+            right: 280px;
+        }
+        h2::before {
+            left: 0;
         }
     }
 }
-

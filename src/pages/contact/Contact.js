@@ -13,11 +13,11 @@ export default function Contact() {
         <>
             <BackgroundAll />
             <div className='max-width'>
-                <div className='title contact'>
-                    <h2>Get in <span>touch</span></h2>
-                    <div className='line'></div>
-                    <div className='line2'></div>
-                    <div className='contact-social'>
+                <div className='left-content contact'>
+                    <div className='title'>
+                        <h2>Get in <span>touch</span></h2>
+                    </div>
+                    <div className='social-media'>
                         <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
                             <FaLinkedinIn />
                         </a>
@@ -30,14 +30,17 @@ export default function Contact() {
                         <a href='https://github.com/mateomazzucco11' target='_blank'>
                             <FaGithub />
                         </a>
+                        
                     </div>
-                    <div className='contact-email'>
+                    <div className='content-button'>
                         <a href='#'>mateomazzucco4@gmail.com</a>
                     </div>
                 </div>
-                <a className='image image-contact' >
-                    <img src={ imageContact } />
-                </a>
+                <div className='right-image'>
+                    <a>
+                        <img src={ imageContact } />
+                    </a>
+                </div>
             </div>
         </>
     )

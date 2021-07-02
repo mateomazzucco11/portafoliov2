@@ -1,84 +1,15 @@
 @import '../../styles/Animation.scss';
 
-.image.image-project {
-    position: absolute;
-    width: 50%;
-    height: 65vh;
-    right: 120px;
-    z-index: 5;
-    top: 180px;
-    background: #000123;
-    img {
-        object-fit:cover;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        opacity: .7;
-    }
-}
-
-.title.project-first {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 120px;
-    left: 350px;
-    color: #fff;
-    font-family: 'Baloo Tammudu 2', cursive;
-    h2 {
-        z-index: 6;
-        font-size: 180px;
-        font-weight: bold;
-        position: absolute;
-        animation: animation-one 3s .8s forwards;
-        animation-timing-function: ease;
-    }
-    .line {
-        height: 4px;
-        border-radius: 12px;
-        width: 190px;
-        background: #179fcd;
-        position: absolute;
-        top: 410px;
-        animation: animation-one 2.4s .8s forwards;
-        animation-timing-function: ease;
-    }
-    .line2 {
-        height: 4px;
-        border-radius: 12px;
-        width: 190px;
-        background: #179fcd;
-        position: absolute;
-        top: 425px;
-        left: 160px;
-        animation: animation-line2 2.8s .8s forwards;
-        animation-timing-function: ease;
-    }
-    p {
-        position: absolute;
-        top: 470px;
-        font-size: 22px;
-        font-weight: bold;
-        width: 45%;
-        animation: animation-one 3.2s .8s forwards;
-        animation-timing-function: ease;
-    }
-    a {
-        position: absolute;
-        height: 42px;
-        top: 600px;
-        text-decoration: none;
-        color: #fff;
-        border: 2px solid #179fcd;
-        background: #179fcd;
-        padding: 5px 12px;
-        width: 25%;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        box-shadow: 0px 0px 16px #fff;
-        animation: animation-one 3.6s .8s forwards;
-        animation-timing-function: ease;
+.left-content.project {
+    .title {
+        h2 {
+            margin-left: -15px;
+        }
+        h2::before {
+            left: 0px;
+        }
+        h2::after {
+            right: 85px;
+        }
     }
 }

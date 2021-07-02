@@ -82,79 +82,97 @@
     position: relative;
     animation: animation-navopen 1s 0s forwards;
     animation-timing-function: ease;
-    .section.one {
-        opacity: 1;
-        height: 45%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        p{
-            margin: 0;
-        }
-        .h1 {
-            opacity: 1;
-            margin-top: 100px;
-            font-weight: bold;
-            font-size: 68px;
-            letter-spacing: -5.6px;
-            font-family: 'Nunito', sans-serif;
-            user-select: none;
-            color: #fff;
-        }
-        div {
-            opacity: 1;
-            font-size: 48px;
-            margin-top: 58px;
-            a, a:visited {
-                color: #179fcd;
-                margin: 0 48px;
-            }
+    .background {
+        position: absolute; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+        z-index: -1;
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            opacity: .3;
         }
     }
-    .section.two {
-        display: grid;
-        height: 55%;
-        grid-template-columns: repeat(2,1fr);
-        opacity: 1;
-        div{
+    .right-side.astronaut {
+        position: absolute;
+        right: 0;
+        display: flex;
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 200px;
+            height: 450px;
+        }
+    }
+    .left-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Baloo Tammudu 2', cursive;
+        .content-left{
+            width: 50%;
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
-            opacity: 1;
-            a{
-                font-size: 55px;
-                outline: none;
+            direction: ltr;
+            justify-content: center;
+            height: 100%;
+            a {
+                color: #fff;
+                letter-spacing: -6px;
+                font-size: 70px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                transition: ease-in-out .25s;
+            }
+            a:hover {
+                letter-spacing: 0;
+            }
+            div {
+                margin-top: 50px;
+                a {
+                    font-size: 40px;
+                    padding: 0 80px;
+                    color: #fff;
+                    transition: ease-in-out .25s;
+                }
+                a:hover {
+                    color: #179fcd;
+                }
+            }
+        }
+        .content-right {
+            width: 50%;
+            display: flex;
+            direction: rtl;
+            flex-direction: column;
+            margin-left: auto;
+            justify-content: center;
+            height: 100%;
+            a {
+                margin: 10px 0;
+                font-size: 70px;
                 text-decoration: none;
                 text-transform: uppercase;
+                color: #fff;
+                letter-spacing: -6px;
+                transition: ease-in-out .25s;
+                display: flex;
                 font-weight: bold;
-                letter-spacing: -2px;
-                font-family: 'Anton', sans-serif;
-                color: #fff;
-                transition: ease-in-out .2s;
             }
-            p {
-                font-family: 'Nunito', sans-serif;
-                color: #fff;
-                font-size: 22px;
-                letter-spacing: -2px;
-                transition: ease-in-out .2s;
-            }
-            a:hover, a:focus, p:hover, p:focus {
-                letter-spacing: 4px;
-            }
-            
-        }
-        div:nth-child(2), div:nth-child(3){
-            background: #535353;
-            filter: brightness(70%);
-            opacity: 1;
-            a {
-                color: #179fcd;
-            }
-            p {
-                color: #179fcd;
+            a:hover {
+                letter-spacing: 0;
             }
         }
     }

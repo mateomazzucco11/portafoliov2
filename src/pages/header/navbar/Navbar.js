@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
+import backgroundNav from '../../../videos/backgroundNav.mp4'
+import astronautNav from '../../../images/astronaut.png'
+
 import './Navbar.scss';
 import '../../../styles/Palete.scss'
 
@@ -21,45 +24,38 @@ const Navbar = () => {
                 </div>
             </div>
             <nav className={`container-nav out ${active ? 'active' : ''}`} id='nav-open'>
-                    <div className='section one'>
-                        <p className='h1'>mateo</p>
-                        <div>
-                            <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
-                                <FaLinkedinIn />
-                            </a>
-                            <a href='https://twitter.com/MazzuccoMateo' target='_blank'>
-                                <FiTwitter />
-                            </a>
-                            <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
-                                <SiInstagram />
-                            </a>
-                            <a href='https://github.com/mateomazzucco11' target='_blank'>
-                                <FaGithub />
-                            </a>
-                        </div>
+                    <div className='background'>
+                        <video src={ backgroundNav } autoPlay loop muted/>
                     </div>
-                    <div className='section two'>
-                        <div>
-                            <div className='contact-cv'>
-                                <BrowserRouter>
-                                    <Route>
-                                        <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
-                                    </Route>
-                                </BrowserRouter>
+                    <div className='right-side astronaut'>
+                        <img src={ astronautNav } />
+                    </div>
+                    <div className='left-side'>
+                        <div className='content-left'>
+                            <BrowserRouter>
+                                <Route>
+                                    <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
+                                </Route>
+                            </BrowserRouter>
+                            <div className='contact-social'>
+                                <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
+                                    <FaLinkedinIn />
+                                </a>
+                                <a href='google.com' target='_blank'>
+                                    <FiTwitter />
+                                </a>
+                                <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
+                                    <SiInstagram />
+                                </a>
+                                <a href='https://github.com/mateomazzucco11' target='_blank'>
+                                    <FaGithub />
+                                </a>
                             </div>
-                            <p>See my summary.</p>
                         </div>
-                        <div>
-                            <Link to='/about' onClick={() => setActive(!active)}>About</Link>
-                            <p>Get to know me.</p>
-                        </div>
-                        <div>
-                            <Link to='/project' onClick={() => setActive(!active)}>Project's</Link>
-                            <p>Things I've done.</p>
-                        </div>
-                        <div>
-                            <Link to='/' onClick={() => setActive(!active)}>Contact me</Link>
-                            <p>Come contact me.</p>
+                        <div className='content-right'>
+                            <Link to='/'>Home</Link>
+                            <Link to='/about'>About</Link>
+                            <Link to='/project'>Projects</Link>
                         </div>
                     </div>
             </nav>
