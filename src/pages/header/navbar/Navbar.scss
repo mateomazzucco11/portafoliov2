@@ -56,7 +56,7 @@
     }
     .bar-two {
         position: absolute;
-        animation: bar-two-left .5s 0.15s forwards;
+        animation: bar-two-out .5s 0.15s forwards;
     }
     .bar-three {
         transform: rotate(125deg);
@@ -64,12 +64,6 @@
         top: 18px;
         left: 8px;
     }
-}
-
-
-.container-nav {
-    visibility: hidden;
-    position: relative;
 }
 
 .container-nav.out.active {
@@ -80,8 +74,6 @@
     z-index: 10;
     margin: 0;
     position: relative;
-    animation: animation-navopen 1s 0s forwards;
-    animation-timing-function: ease;
     .background {
         position: absolute; 
         top: 0; 
@@ -109,6 +101,9 @@
         img {
             width: 200px;
             height: 450px;
+            -webkit-animation:spin 4s linear infinite;
+            -moz-animation:spin 4s linear infinite;
+            animation:spin 10s linear infinite;
         }
     }
     .left-side {
@@ -121,11 +116,12 @@
         text-align: center;
         font-family: 'Baloo Tammudu 2', cursive;
         .content-left{
-            width: 50%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             direction: ltr;
             justify-content: center;
+            align-items: center;
             height: 100%;
             a {
                 color: #fff;
@@ -140,11 +136,14 @@
                 letter-spacing: 0;
             }
             div {
-                margin-top: 50px;
+                margin-top: -10px;
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
                 a {
                     font-size: 40px;
-                    padding: 0 80px;
                     color: #fff;
+                    margin: 45px 0;
                     transition: ease-in-out .25s;
                 }
                 a:hover {
@@ -153,7 +152,7 @@
             }
         }
         .content-right {
-            width: 50%;
+            width: 100%;
             display: flex;
             direction: rtl;
             flex-direction: column;
@@ -177,3 +176,7 @@
         }
     }
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -47,9 +47,6 @@ export default function Project2() {
                     <div className='project-right'>
                         <img src={imageProject2} />
                     </div>
-                    <div className='scroll-down'>
-                        <span>scrolldown</span>
-                    </div>
                 </section>
                 <section className='second-project-section'>
                     <div className='title project-section2'>

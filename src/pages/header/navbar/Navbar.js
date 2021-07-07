@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import backgroundNav from '../../../videos/backgroundNav.mp4'
 import astronautNav from '../../../images/astronaut.png'
@@ -11,54 +12,87 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
 
+const variants = {
+    open: { opacity: 1, y: 0},
+    closed: { opacity: 0, y: '-100%'},
+}
 
 const Navbar = () => {
     const [ active, setActive ] = useState(false)
+    const [ isOpen, setIsOpen ] = useState(false)
     return (
         <>
             <div className='container navbar'>
-                <div className={`hamburger-icon ${active ? 'active' : ''}`} id='switch-menu' onClick={() => setActive(!active)}>
+                <div className={`hamburger-icon ${active ? 'active' : ''}`} id='switch-menu' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>
                     <div className='bar-one rounded'></div>
                     <div className='bar-two rounded'></div>
                     <div className='bar-three rounded'></div>
                 </div>
             </div>
-            <nav className={`container-nav out ${active ? 'active' : ''}`} id='nav-open'>
-                    <div className='background'>
-                        <video src={ backgroundNav } autoPlay loop muted/>
-                    </div>
-                    <div className='right-side astronaut'>
-                        <img src={ astronautNav } />
-                    </div>
-                    <div className='left-side'>
-                        <div className='content-left'>
-                            <BrowserRouter>
-                                <Route>
-                                    <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
-                                </Route>
-                            </BrowserRouter>
-                            <div className='contact-social'>
-                                <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
-                                    <FaLinkedinIn />
-                                </a>
-                                <a href='google.com' target='_blank'>
-                                    <FiTwitter />
-                                </a>
-                                <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
-                                    <SiInstagram />
-                                </a>
-                                <a href='https://github.com/mateomazzucco11' target='_blank'>
-                                    <FaGithub />
-                                </a>
+            <motion.nav
+                initial={ false }
+                animate={ isOpen ? 'open' : 'closed'}
+                variants={ variants }
+                transition={{ duration: .5 }}
+            >
+                <nav className={`container-nav out ${active ? 'active' : ''}`} id='nav-open'>
+                        <div className='background'>
+                            <video src={ backgroundNav } autoPlay loop muted/>
+                        </div>
+                        <div className='right-side astronaut'>
+                            <motion.nav
+                                initial={ false }
+                                animate={ isOpen ? 'open' : 'closed'}
+                                variants={ variants }
+                                transition={{ duration: 1, delay: .3 }}
+                            >
+                                <img src={ astronautNav } alt='astronaut'/>
+                            </motion.nav>
+                        </div>
+                        <div className='left-side'>
+                            <div className='content-left'>
+                                <motion.nav
+                                    initial={ false }
+                                    animate={ isOpen ? 'open' : 'closed'}
+                                    variants={ variants }
+                                    transition={{ duration: .8, delay: 1 }}
+                                >
+                                    <div className='contact-social'>
+                                        <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='blank'>
+                                            <FaLinkedinIn />
+                                        </a>
+                                        <a href='https://www.twitter.com/MazzuccoMateo/' target='blank'>
+                                            <FiTwitter />
+                                        </a>
+                                        <a href='https://www.instagram.com/mateomazzucco/' target='blank'>
+                                            <SiInstagram />
+                                        </a>
+                                        <a href='https://github.com/mateomazzucco11/' target='blank'>
+                                            <FaGithub />
+                                        </a>
+                                    </div>
+                                </motion.nav>
                             </div>
+                            <motion.nav
+                                initial={ false }
+                                animate={ isOpen ? 'open' : 'closed'}
+                                variants={ variants }
+                                transition={{ duration: .8, delay: .7 }}
+                            >
+                                <div className='content-right'>
+                                    <Link to='/'>Home</Link>
+                                    <Link to='/about'>About</Link>
+                                    <Link to='/project'>Projects</Link>
+                                    <BrowserRouter>
+                                        <Route>
+                                            <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
+                                        </Route>
+                                    </BrowserRouter>
+                                </div>
+                            </motion.nav>
                         </div>
-                        <div className='content-right'>
-                            <Link to='/'>Home</Link>
-                            <Link to='/about'>About</Link>
-                            <Link to='/project'>Projects</Link>
-                        </div>
-                    </div>
-            </nav>
+                </nav>
+            </motion.nav>
         </>
     )
 }

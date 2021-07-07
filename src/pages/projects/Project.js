@@ -25,7 +25,7 @@ export default function Project() {
                 </div>
                 <div className='right-image'>
                     <Link to='/project'>
-                        <img src={ imageProject } />
+                        <img src={ imageProject } alt='Project'/>
                     </Link>
                 </div>
             </div>

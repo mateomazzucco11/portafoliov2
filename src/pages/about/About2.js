@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import './About2.scss'
-import Header from '../header/Header'
+import React, { useState, useEffect } from 'react';
+import './About2.scss';
+import Header from '../header/Header';
+import Arrow from '../../components/return/Arrow'
 
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 
@@ -44,6 +45,7 @@ export default function About2() {
     return (
         <>
             <Header className={ change }/>
+            <Arrow />
             <div className='aboutMe max-width' id='about-open'>
                 <div className='container-aboutMe'>
                     <section className='first-about-section'>
@@ -57,9 +59,6 @@ export default function About2() {
                         </div>
                         <div className='about-right'>
                             <img src={ imageAbout } />
-                        </div>
-                        <div className='scrolldown'>
-                            <span>scrolldown</span>
                         </div>
                     </section>
                     <section className='second-about-section'>

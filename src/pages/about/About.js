@@ -27,7 +27,7 @@ export default class About extends React.Component {
                     </div>
                     <div className='right-image'>
                         <Link to='/about'>
-                            <img src={ imageAbout } />
+                            <img src={ imageAbout } alt='About'/>
                         </Link>
                     </div>
                     

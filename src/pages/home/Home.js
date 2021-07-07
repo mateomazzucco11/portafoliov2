@@ -23,16 +23,16 @@ export default function Home() {
                         <h2>FrontEnd Developer <span>👨‍💻</span></h2>
                     </div>
                     <div className='social-media'>
-                        <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
+                        <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='blank'>
                             <FaLinkedinIn />
                         </a>
-                        <a href='https://twitter.com/MazzuccoMateo' target='_blank'>
+                        <a href='https://twitter.com/MazzuccoMateo' target='blank'>
                             <FiTwitter />
                         </a>
-                        <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
+                        <a href='https://www.instagram.com/mateomazzucco/' target='blank'>
                             <SiInstagram />
                         </a>
-                        <a href='https://github.com/mateomazzucco11' target='_blank'>
+                        <a href='https://github.com/mateomazzucco11' target='blank'>
                             <FaGithub />
                         </a>
                     </div>
