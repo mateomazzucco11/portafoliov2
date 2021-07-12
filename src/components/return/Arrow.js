@@ -1,10 +1,12 @@
-import React from 'react'
-import './Arrow.scss'
+import React from 'react';
+import './Arrow.scss';
+import { Link } from 'react-router-dom';
 
-export const Arrow = () => {
+export const Arrow = ({ className, to }) => {
     return (
-        <div className='arrow'/>
+        <Link className={`arrow ${className}`} to={`${to}`}>
+            <span></span>
+        </Link>
     )
 }
-
 export default Arrow;

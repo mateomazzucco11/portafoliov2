@@ -13,7 +13,7 @@ export default function Project() {
             <BackgroundAll />
             <div className='max-width'>
                 <div className='left-content project'>
-                    <div className='title'>
+                    <div className='title project'>
                         <h2>Project</h2>
                     </div>
                     <div className='content-text'>
@@ -25,7 +25,7 @@ export default function Project() {
                 </div>
                 <div className='right-image'>
                     <Link to='/project'>
-                        <img src={ imageProject } alt='Project'/>
+                        <img src={imageProject} alt='Project' />
                     </Link>
                 </div>
             </div>

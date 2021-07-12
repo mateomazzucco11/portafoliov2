@@ -3,7 +3,6 @@ import React from 'react'
 import './Home.scss'
 import '../Styles.scss'
 
-
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
@@ -18,7 +17,7 @@ export default function Home() {
             <div className='max-width'>
                 <div className='left-content home'>
                     <div className='title'>
-                        <p>Hi there 👋, i'm</p>         
+                        <p>Hi there 👋, i'm</p>      
                         <h1>mateo .</h1>
                         <h2>FrontEnd Developer <span>👨‍💻</span></h2>
                     </div>

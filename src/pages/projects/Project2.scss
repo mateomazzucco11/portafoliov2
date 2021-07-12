@@ -66,8 +66,9 @@
         top: 130px;
         .title.project-section2 {
             position: absolute;
-            left: 160px;
             height: fit-content;
+            top: -25px;
+            padding-left: 35px;
             h2{
                 color: #000;
                 text-transform: uppercase;
@@ -82,21 +83,26 @@
         }
         .container-projects {
             color: #000;
-            width: 85.328%;
+            width: 100%;
             position: absolute;
-            left: 280.0156096px;
-            top: 120px;
-            height: 65%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             div {
-                width: 100%;
-                height: 100%;
+                width: 98%;
+                height: 90%;
+                border-radius: 5px;
                 div {
+                    border-radius: 5px;
                     ul {
                         width: 100%;
                         height: 100%;
+                        border-radius: 5px;
                         li {
                             div {
                                 position: relative;
+                                border-radius: 5px;
                                 img {
                                     object-fit: cover;
                                     width: 100%;
@@ -104,16 +110,15 @@
                                     position: absolute;
                                     top: 0;
                                     left: 0;
+                                    border-radius: 5px;
                                 }
                                 div {
-                                    position: absolute;
                                     bottom: 8px;
                                     width: 100%;
-                                    height: 12%;
+                                    height: 100%;
                                     display: flex;
-                                    align-items: center;
-                                    justify-content: flex-start;
-                                    align-content: center;
+                                    align-items: flex-end;
+                                    justify-content: center;
                                     div {
                                         border-radius: 6px;
                                         padding: 10px;
@@ -125,18 +130,17 @@
                                         align-content: center;
                                         width: 140px;
                                         background: #179fcd;
+                                        margin: 0 10px;
+                                        opacity: .7;
+                                        z-index: 15;
                                         a{
+                                            padding-top: 5px;
                                             text-align: center;
                                             height: 100%;
                                             color: #fff;
-                                            
+                                            z-index: 15;
+                                            text-decoration: none;
                                         }
-                                    }
-                                    div:nth-child(1) {
-                                        left: 360px;
-                                    }
-                                    div:nth-child(2) {
-                                        left: 510px;
                                     }
                                 }
                             }
@@ -145,44 +149,6 @@
                 }
             }
         }
-        footer {
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-            height: 80px;
-            background: #000123;
-            opacity: 1;
-            display: flex;
-            justify-content: space-around;
-            div{
-                display: flex;
-                align-items: center;
-                height: 100%;
-                a{
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    font-size: 22px;
-                    text-transform: uppercase;
-                    color: #fff;
-                    align-items: center;
-                    svg {
-                        font-size: 26px;
-                    }
-                }
-                a:hover {
-                    color: #179fcd;
-                }
-            }
-            div:nth-child(1) {
-                padding-top: 15px;
-                padding-left: 70px;
-                span {
-                    position: absolute;
-                    left: 270px;
-                    top: 30px;
-                }
-            }
-        }
+        
     }
 }
