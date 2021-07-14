@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { HashRouter, Route, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import backgroundNav from '../../../videos/backgroundNav.mp4'
@@ -96,11 +96,11 @@ const Navbar = () => {
                                 <Link to='/#About' exact onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>About</Link>
                                 <Link to='/#Project' exact onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Projects</Link>
                                 <Link to='/#Contact' exact onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Contact</Link>
-                                <BrowserRouter>
+                                <HashRouter>
                                     <Route>
                                         <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
                                     </Route>
-                                </BrowserRouter>
+                                </HashRouter>
                             </div>
                         </motion.nav>
                     </div>
