@@ -1,4 +1,4 @@
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 540px) {
     .container.header {
         .title-h1 {
             left: 18px;
@@ -83,7 +83,7 @@
                     margin: 0;
                     margin-top: 20px;
                     
-                    a {
+                    a, button {
                         font-size: 10px;
                         padding-top: 3px;
                     }
@@ -200,7 +200,10 @@
         .left-side {
             width: 100% !important;
             .content-left {
-                width: 40% !important;
+                display: flex !important;
+                padding: 0 !important;
+                justify-content: center;
+                align-items: center;
                 nav {
                     margin: 0;;
                     .contact-social {
@@ -346,7 +349,7 @@
                         .passion {
                             margin: 0;
                             width: 100%;
-                            padding: 0 4px;
+                            padding: 0 2px;
                             h2{
                                 font-size: 15px;
                             }
@@ -355,7 +358,7 @@
                             }
                             div {
                                 p{
-                                    line-height: 15px;
+                                    line-height: 14px;
                                     text-align: left;
                                 }
                             }
@@ -398,11 +401,11 @@
                                         }
                                     }
                                     h2::before {
-                                        width: 70px;
-                                        margin-left: 45px;
+                                        width: 50px;
+                                        margin-left: 35px;
                                     }
                                     h2::after {
-                                        width: 70px;
+                                        width: 50px;
                                     }
                                 }
                             }
@@ -475,3 +478,54 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .aboutMe.max-width {
+        .container-aboutMe {
+            .first-about-section {
+                .left-content.about.two {
+                    .title {
+                        h2 {
+                            font-size: 65px;
+                            margin-left: -22px;
+                        }
+                        h2::after {
+                            width: 130px;
+                            bottom: 35px;
+                            left: 70px;
+                        }
+                        h2::before {
+                            width: 130px;
+                            left: -22px;
+                            bottom: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .projectMe {
+        .first-project-section {
+            .left-content.project.two {
+                .title {
+                    margin: 0;
+                    h2 {
+                        font-size: 65px;
+                        margin-left: -90px;
+                    }
+                    h2::after {
+                        width: 130px;
+                        bottom: 35px;
+                        left: 10px;
+                    }
+                    h2::before {
+                        width: 130px;
+                        left: -85px;
+                        bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+

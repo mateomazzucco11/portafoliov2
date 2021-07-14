@@ -10,28 +10,26 @@ export default class BackgroundAll extends React.Component {
                 position: 'absolute',
                 right: 0,
                 height: '100%',
-                
             }
         }
         return (
             <ParallaxMousemove>
-                    <ul className='content-img'>
-                        <li >
-                            <ParallaxMousemove.Layer layerStyle={style.bgLayerStyle} config={{
-                                xFactor: 0.2,
-                                yFactor: 0.05,
-                                springSettings: {
-                                    stiffness: 50,
-                                    damping: 10
-                                }
-                            }}>
-                                <img src={ LeftSide } />
-                            </ParallaxMousemove.Layer>
-                        </li>
-                    </ul>
-                
+                <ul className='content-img'>
+                    <li >
+                        <ParallaxMousemove.Layer layerStyle={style.bgLayerStyle} config={{
+                            xFactor: 0.06,
+                            yFactor: 0.02,
+                            springSettings: {
+                                stiffness: 50,
+                                damping: 10
+                            }
+                        }}>
+                            <img src={LeftSide} />
+                        </ParallaxMousemove.Layer>
+                    </li>
+                </ul>
             </ParallaxMousemove>
-            
+
         )
     }
 }

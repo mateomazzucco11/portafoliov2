@@ -118,11 +118,10 @@
         font-family: 'Baloo Tammudu 2', cursive;
         .content-left{
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            direction: ltr;
-            justify-content: center;
-            align-items: center;
+            display: inline-block;
+            padding-left: 30%;
+            padding-top: 14%;
+            text-align: center;
             height: 100%;
             a {
                 color: #fff;

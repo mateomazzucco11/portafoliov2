@@ -7,6 +7,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
 import BackgroundAll from '../../components/background/BackgroundAll';
+import { ButtonEmail } from '../../components/buttonEmail/ButtonEmail';
 
 export default function Contact() {
     return (
@@ -33,7 +34,7 @@ export default function Contact() {
 
                     </div>
                     <div className='content-button contact'>
-                        <a href='#'>mateomazzucco4@gmail.com</a>
+                        <ButtonEmail label='mateomazzucco4@gmail.com' mailto='mailto:mateomazzucco4@gmail.com' />
                     </div>
                 </div>
                 <div className='right-image'>

@@ -9,13 +9,13 @@ import BackgroundAll from '../../components/background/BackgroundAll';
 
 export default class About extends React.Component {
 
-    render (){
+    render() {
         return (
             <>
                 <BackgroundAll />
                 <div className='max-width' >
                     <div className='left-content about'>
-                        <div className='title'>
+                        <div className='title about'>
                             <h2>About Me</h2>
                         </div>
                         <div className='content-text'>
@@ -27,10 +27,10 @@ export default class About extends React.Component {
                     </div>
                     <div className='right-image'>
                         <Link to='/about'>
-                            <img src={ imageAbout } alt='About'/>
+                            <img src={imageAbout} alt='About' />
                         </Link>
                     </div>
-                    
+
                 </div>
             </>
         )
