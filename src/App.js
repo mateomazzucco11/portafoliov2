@@ -7,7 +7,7 @@ import About2 from './pages/about/About2';
 import Fullpagescroll from './components/fullpagescrol/Fullpagescroll';
 import Project2 from './pages/projects/Project2';
 
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export default function App() {
   return (

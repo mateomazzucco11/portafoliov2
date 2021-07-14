@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.scss';
 
-import { HashRouter, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
@@ -10,13 +10,13 @@ import { FcDownload } from 'react-icons/fc';
 export const Footer = () => {
     return (
         <footer className='footer'>
-            <HashRouter>
+            <BrowserRouter>
                 <Route>
                     <div>
                         <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'><div><span><FcDownload /></span></div> Resume</Link>
                     </div>
                 </Route>
-            </HashRouter>
+            </BrowserRouter>
             <div>
                 <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
                     <FaLinkedinIn />

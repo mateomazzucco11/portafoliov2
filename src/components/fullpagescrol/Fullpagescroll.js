@@ -20,7 +20,7 @@ const Fullpagescroll = () => {
             <ReactFullpage
                 scrollingSpeed={1150}
                 recordHistory={true}
-                anchors={['Home', 'About', 'Project', 'Contact']}
+                anchors={['#Home', '#About', '#Project', '#Contact']}
                 navigation
                 render={() => {
                     return (
