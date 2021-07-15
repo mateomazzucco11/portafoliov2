@@ -7,7 +7,6 @@
             right: 18px;
         }
     }
-    
     .fp-tableCell {
         div { 
             .content-img {
@@ -25,137 +24,6 @@
                             position: absolute;
                             right: 30px;
                         }
-                    }
-                }
-            }
-        }
-        .max-width {
-            .left-content {
-                width: 100%;
-                height: 55%;
-                justify-content: flex-start;
-                align-items: flex-start;
-                margin-left: 18px;
-                .title {
-                    margin: 0;
-                    p {
-                        font-size: 10px;
-                        margin: 0;
-                    }
-                    h1 {
-                        font-size: 30px;
-                        height: 40px;
-                        letter-spacing: -2px;
-                    }
-                    h2 {
-                        font-size: 65px;
-                        margin: 0;
-                        span {
-                            margin-top: 50px;
-                            margin-left: -51px
-                        }
-                    }
-                    h2::after {
-                        width: 130px;
-                        bottom: 40px;
-                        left: 100px;
-                    }
-                    h2::before {
-                        width: 130px;
-                        bottom: 55px;
-                    }
-                }
-                .title.project {
-                    h2::before {
-                        bottom: 45px;
-                    }
-                    h2::after {
-                        bottom: 30px;
-                    }
-                }
-                .content-text {
-                    p{
-                        font-size: 10px;
-                    }
-                }
-                .content-button {
-                    width: 300px;
-                    margin: 0;
-                    margin-top: 20px;
-                    
-                    a, button {
-                        font-size: 10px;
-                        padding-top: 3px;
-                    }
-                }
-                .content-button.contact {
-                    margin-top: 0px;
-                }
-                .social-media {
-                    margin-top: -25px;
-                    margin-left: -200px;
-                    a {
-                        font-size: 20px;
-                        padding-left: 35px;
-                    }
-                }
-            }
-            .left-content.home {
-                width: 100%;
-                height: 70%;
-                margin-left: 18px;
-                .title{
-                    margin-left: 1px;
-                    top: 10%;
-                    p {
-                        font-size: 20px;
-                        height: 30px;
-                    }
-                    h1 {
-                        font-size: 85px;
-                        height: 120px;
-                        letter-spacing: -9px;
-                        margin-left: -12px;
-                    }
-                    h2 {
-                        font-size: 20px;
-                        margin-top: 70px;
-                        margin-left: 0px;
-                        span {
-                            margin-left: 0;
-                        }
-                    }
-                    h2::before {
-                        bottom: 100px;
-                        left: 0;
-                    }
-                    h2::after {
-                        bottom: 85px;
-                    }
-                }
-                .social-media {
-                    margin-top: 66px;
-                    margin-left: -192px;
-                    a {
-                        font-size: 25px;
-                        padding-left: 35px;
-                    }
-                }
-            }
-            .right-image {
-                display: flex;
-                height: 45%;
-                width: 90%;
-                bottom: 0;
-                margin: 0 18px;
-                margin-bottom: 40px;
-                a{
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    img {
-                        height: 100%;
-                        width: 100%;
                     }
                 }
             }
@@ -228,6 +96,67 @@
             }
         }
     }
+    /* Left content */
+    .max-width{
+        .left-content {
+            padding-left: 20px;
+            .title {
+                padding-bottom: 215px;
+                h2 {
+                    font-size: 70px;
+                }
+                .lines {
+                    margin-bottom: 10px;
+                    span:nth-child(1) {
+                        width: 120px;
+                    }
+                    span:nth-child(2) {
+                        width: 120px;
+                        margin-left: 100px;
+                    }
+                }
+                p {
+                    font-size: 15px;
+                }
+                .content-button {
+                    margin-top: 5px;
+                    width: 180px;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+                .social-media {
+                    margin-top: 0px;
+                    a {
+                        font-size: 20px;
+                        padding: 0 18px;
+                    }
+                }
+            }
+            
+            .title.home {
+                h2 {
+                    letter-spacing: -8px;
+                }
+                p {
+                    font-size: 20px;
+                }
+                .social-media{
+                    margin-top: 20px;
+                }
+            }
+        }
+        .scrolldown {
+            display: none;
+        }
+        .right-image {
+            width: 100%;
+            height: 50%;
+            bottom: 0;
+            right: auto;
+            margin: 0 8.5px;
+        }
+    }
     /* /About me change  */
     .arrow.change, .arrow.changeColor {
         z-index: 11111;
@@ -245,37 +174,12 @@
     .aboutMe.max-width {
         .container-aboutMe {
             .first-about-section {
-                .left-content.about.two {
+                .right-image {
                     width: 100%;
-                    height: 100%;
                     margin: 0;
-                    top: -40px;
-                    text-align: left;
-                    .title {
-                        margin: 0;
-                        h2 {
-                            font-size: 65px;
-                            margin-left: -110px;
-                        }
-                        h2::after {
-                            width: 130px;
-                            bottom: 35px;
-                            left: -10px;
-                        }
-                        h2::before {
-                            width: 130px;
-                            left: -110px;
-                            bottom: 50px;
-                        }
-                    }
-                    .content-text {
-                        width: 100%;
-                        margin: 0;
-                        margin-top: 60px;
-                        padding: 0 18px;
-                        p {
-                            font-size: 15px;
-                        }
+                    box-shadow: none;
+                    a{ 
+                        box-shadow: none;
                     }
                 }
             }
@@ -284,7 +188,7 @@
                 .max-width {
                     .about-section-left {
                         width: 100%;
-                        height: 15%;
+                        height: 10%;
                         position:inherit;
                         margin: 0;
                         padding: 0 18px;
@@ -292,7 +196,7 @@
                         padding-top: 25px;
                         h2{
                             height: 100%;
-                            font-size: 40px;
+                            font-size: 30px;
                         }
                     }
                     .about-section-right {
@@ -313,7 +217,7 @@
                             p {
                                 width: 100%;
                                 margin: 0;
-                                line-height: 25px;
+                                line-height: 15px;
                             }
                             img {
                                 width: 100%;
@@ -328,7 +232,7 @@
                 .max-width {
                     .about-section-top {
                         width: 100%;
-                        height: 12%;
+                        height: 5%;
                         position:inherit;
                         margin: 0;
                         padding: 0 18px;
@@ -336,29 +240,29 @@
                         padding-top: 25px;
                         h2{
                             height: 100%;
-                            font-size: 40px;
+                            font-size: 30px;
                         }
                     }
                     .about-section-bottom {
                         margin: 0;
-                        height: 88%;
-                        width: 100%;
-                        grid-template-rows: repeat(4,1fr);
-                        padding: 0 18px;
+                        height: 100vh;
+                        padding: 0px;
                         margin-top: 80px;
+
                         .passion {
                             margin: 0;
                             width: 100%;
                             padding: 0 2px;
                             h2{
-                                font-size: 15px;
+                                font-size: 10px;
                             }
                             img {
-                                height: 10%;
+                                height: 12%;
                             }
                             div {
                                 p{
                                     line-height: 14px;
+                                    font-size: 14px;
                                     text-align: left;
                                 }
                             }
@@ -396,16 +300,19 @@
                                 li {
                                     div {
                                         img {
-                                            width: 45px;
-                                            height: 45px;
+                                            width: 30px;
+                                            height: 30px;
                                         }
                                     }
+                                    h2{
+                                        font-size: 20px;
+                                    }
                                     h2::before {
-                                        width: 50px;
-                                        margin-left: 35px;
+                                        width: 20px;
+                                        margin-left: 15px;
                                     }
                                     h2::after {
-                                        width: 50px;
+                                        width: 20px;
                                     }
                                 }
                             }
@@ -418,40 +325,14 @@
     /* Project change */
     .projectMe {
         .first-project-section {
-            .left-content.project.two {
+            .right-image {
                 width: 100%;
-                height: 100%;
-                margin: 0 !important;
-                top: -40px;
-                text-align: left;
-                .title {
-                    margin: 0;
-                    h2 {
-                        font-size: 65px;
-                        margin-left: -185px;
-                    }
-                    h2::after {
-                        width: 130px;
-                        bottom: 35px;
-                        left: -80px;
-                    }
-                    h2::before {
-                        width: 130px;
-                        left: -180px;
-                        bottom: 50px;
-                    }
-                }
-                .content-text {
-                    width: 100%;
-                    margin: 0;
-                    margin-top: 60px;
-                    padding: 0 18px;
-                    p {
-                        font-size: 15px;
-                    }
+                margin: 0;
+                box-shadow: none;
+                a{ 
+                    box-shadow: none;
                 }
             }
-            
         }
         .second-project-section {
             margin: 0;

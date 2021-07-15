@@ -18,10 +18,10 @@ export default function App() {
           <Route path='/' exact>
             <Fullpagescroll />
           </Route>
-          <Route path='/about' exact>
+          <Route path='/about2' exact>
             <About />
           </Route>
-          <Route path='/project' exact>
+          <Route path='/project2' exact>
             <Project />
           </Route>
         </Switch>

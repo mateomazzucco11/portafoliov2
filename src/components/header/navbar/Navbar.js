@@ -92,10 +92,10 @@ const Navbar = () => {
                             transition={{ duration: .8, delay: 1.5 }}
                         >
                             <div className='content-right'>
-                                <Link to='/#Home' exact onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Home</Link>
-                                <Link to='/#About' exact onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>About</Link>
-                                <Link to='/#Project' exact onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Projects</Link>
-                                <Link to='/#Contact' exact onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Contact</Link>
+                                <Link to='/#Home' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Home</Link>
+                                <Link to='/#About' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>About</Link>
+                                <Link to='/#Project' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)} >Projects</Link>
+                                <Link to='/#Contact' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)} >Contact</Link>
                                 <BrowserRouter>
                                     <Route>
                                         <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>

@@ -22,7 +22,7 @@ const Fullpagescroll = () => {
             <ReactFullpage
                 scrollingSpeed={1150}
                 recordHistory={true}
-                anchors={['#Home', '#About', '#Project', '#Contact']}
+                anchors={['Home', 'About', 'Project', 'Contact']}
                 navigation
                 render={() => {
                     return (
@@ -41,9 +41,9 @@ const Fullpagescroll = () => {
                                 <ItemHome
                                     titleText='About me'
                                     textText='I love Coding, Technology, Travel, and play Games'
-                                    toButton='/about'
+                                    toButton='/About2'
                                     buttonText='More about me'
-                                    toImage='/about'
+                                    toImage='/About2'
                                     imageSrc={aboutImage}
                                     altImage='About'
                                 />
@@ -52,9 +52,9 @@ const Fullpagescroll = () => {
                                 <ItemHome
                                     titleText='Project'
                                     textText='Projects i Did'
-                                    toButton='/project'
+                                    toButton='/Project2'
                                     buttonText='See projects'
-                                    toImage='/project'
+                                    toImage='/Project2'
                                     imageSrc={projectImage}
                                     altImage='Project'
                                 />
