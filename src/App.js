@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 export default function App() {
   return (
     <>
-      <Router basename='http://mateomazzucco11.github.io/portafoliov2/'>
+      <Router>
         <Switch>
           <Route path='/' exact>
             <Fullpagescroll />
