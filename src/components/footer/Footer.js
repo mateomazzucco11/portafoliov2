@@ -13,27 +13,27 @@ export const Footer = () => {
             <BrowserRouter>
                 <Route>
                     <div>
-                        <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'><div><span><FcDownload /></span></div> Resume</Link>
+                        <Link to='/resource/Resume-Mateo-Mazzucco.pdf' target='_blank'><div><span><FcDownload /></span></div> Resume</Link>
                     </div>
                 </Route>
             </BrowserRouter>
             <div>
-                <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='_blank'>
+                <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='blank'>
                     <FaLinkedinIn />
                 </a>
             </div>
             <div>
-                <a href='https://twitter.com/MazzuccoMateo' target='_blank'>
+                <a href='https://twitter.com/MazzuccoMateo' target='blank'>
                     <FiTwitter />
                 </a>
             </div>
             <div>
-                <a href='https://www.instagram.com/mateomazzucco/' target='_blank'>
+                <a href='https://www.instagram.com/mateomazzucco/' target='blank'>
                     <SiInstagram />
                 </a>
             </div>
             <div>
-                <a href='https://github.com/mateomazzucco11' target='_blank'>
+                <a href='https://github.com/mateomazzucco11' target='blank'>
                     <FaGithub />
                 </a>
             </div>

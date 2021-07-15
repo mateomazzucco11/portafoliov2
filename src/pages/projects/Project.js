@@ -1,33 +1,87 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import { Footer } from '../../components/footer/Footer';
+import { ItemHome } from '../../components/itemHome/ItemHome';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Project.scss'
-import '../../styles/Palete.scss'
 
-import { Link } from 'react-router-dom'
+import Header from '../../components/header/Header';
+import Arrow from '../../components/return/Arrow';
+import projectImage from '../../images/project-image.jpg';
 
-import imageProject from '../../images/project-image.jpg'
-import BackgroundAll from '../../components/background/BackgroundAll'
 
-export default function Project() {
+
+
+export default function Project2() {
+    const [change, setChange] = useState('change');
+
+    const listenScrollEvent = () => {
+        if (window.scrollY < 885) {
+            return setChange('change');
+        } else if (window.scrollY > 885) {
+            return setChange('changeColor')
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+        return () => {
+            window.removeEventListener('scroll', listenScrollEvent);
+        }
+    }, []);
+
     return (
         <>
-            <BackgroundAll />
-            <div className='max-width'>
-                <div className='left-content project'>
-                    <div className='title project'>
-                        <h2>Project</h2>
+            <Arrow className={change} to='/#Project' />
+            <Header className={change} />
+            <div className='projectMe' >
+                <section className='first-project-section'>
+                    <ItemHome
+                        titleText='Project'
+                        textText='Projects i Did'
+                        toButton='/project'
+                        buttonText='See projects'
+                        toImage='/project'
+                        imageSrc={projectImage}
+                        altImage='Project'
+                        imageClassname='more-height'
+                        scrollDown={true}
+                    />
+                </section>
+                <section className='second-project-section'>
+                    <div className='title project-section2'>
+                        <h2>Look at my <span>projects</span></h2>
                     </div>
-                    <div className='content-text'>
-                        <p>Projects i Did</p>
+                    <div className='container-projects'>
+                        <Carousel
+                            showArrows={false}
+                            emulateTouch={true}
+                            infiniteLoop={true}
+                            autoPlay={true}
+                            showThumbs={false}
+                            showStatus={false}
+                            stopOnHover={true}
+                            swipeable={true}
+                            showIndicators={false}
+                            transitionTime={750}
+                            verticalSwipe='standard'
+                        >
+                            <div>
+                                <img src={projectImage} alt='ProjectImage' />
+                                <div>
+                                    <div>
+                                        <a target='_blank' href='#'>Watch online</a>
+                                    </div>
+                                    <div>
+                                        <a target='_blank' href='#'>See code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </Carousel>
                     </div>
-                    <div className='content-button'>
-                        <Link to='/project'>See projects</Link>
-                    </div>
-                </div>
-                <div className='right-image'>
-                    <Link to='/project'>
-                        <img src={imageProject} alt='Project' />
-                    </Link>
-                </div>
+                    <Footer />
+                </section>
             </div>
         </>
     )

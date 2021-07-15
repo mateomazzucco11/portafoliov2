@@ -3,11 +3,12 @@ import './styles/Palete.scss';
 import './styles/Fonts.scss';
 import './styles/MobileResponsive.scss';
 
-import About2 from './pages/about/About2';
-import Fullpagescroll from './components/fullpagescrol/Fullpagescroll';
-import Project2 from './pages/projects/Project2';
+import About from './pages/about/About';
+import Fullpagescroll from './pages/fullpages/Fullpagescroll';
+import Project from './pages/projects/Project';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 export default function App() {
   return (
@@ -18,10 +19,10 @@ export default function App() {
             <Fullpagescroll />
           </Route>
           <Route path='/about' exact>
-            <About2 />
+            <About />
           </Route>
           <Route path='/project' exact>
-            <Project2 />
+            <Project />
           </Route>
         </Switch>
       </Router>
