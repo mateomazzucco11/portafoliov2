@@ -92,15 +92,11 @@ const Navbar = () => {
                             transition={{ duration: .8, delay: 1.5 }}
                         >
                             <div className='content-right'>
-                                <Link to='/#Home' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Home</Link>
-                                <Link to='/#About' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>About</Link>
-                                <Link to='/#Project' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)} >Projects</Link>
-                                <Link to='/#Contact' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)} >Contact</Link>
-                                <BrowserRouter>
-                                    <Route>
-                                        <Link to='/resource/resume-mateomazzucco.pdf' target='_blank'>Resume</Link>
-                                    </Route>
-                                </BrowserRouter>
+                                <Link to='/#Home' >Home</Link>
+                                <Link to='/#About' >About</Link>
+                                <Link to='/#Project'  >Projects</Link>
+                                <Link to='/#Contact'  >Contact</Link>
+                                <a href='/docs/Resume.pdf' download>Resume</a>
                             </div>
                         </motion.nav>
                     </div>

@@ -10,13 +10,9 @@ import { FcDownload } from 'react-icons/fc';
 export const Footer = () => {
     return (
         <footer className='footer'>
-            <BrowserRouter>
-                <Route>
-                    <div>
-                        <Link to='/resource/Resume-Mateo-Mazzucco.pdf' target='_blank'><div><span><FcDownload /></span></div> Resume</Link>
-                    </div>
-                </Route>
-            </BrowserRouter>
+            <div>
+                <a href='/docs/Resume.pdf' download><div><span><FcDownload /></span></div> Resume</a>
+            </div>
             <div>
                 <a href='https://www.linkedin.com/in/mateo-mazzucco/' target='blank'>
                     <FaLinkedinIn />

@@ -1,7 +1,6 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import React from 'react';
 
-import './Fullpagescroll.scss';
 import '../../components/itemHome/ItemHome.scss';
 import '../../styles/MobileResponsive.scss';
 
@@ -23,7 +22,6 @@ const Fullpagescroll = () => {
                 scrollingSpeed={1150}
                 recordHistory={true}
                 anchors={['Home', 'About', 'Project', 'Contact']}
-                navigation
                 render={() => {
                     return (
                         <>
