@@ -24,12 +24,11 @@ export default class BackgroundAll extends React.Component {
                                 damping: 10
                             }
                         }}>
-                            <img src={LeftSide} />
+                            <img src={LeftSide} alt='Background' />
                         </ParallaxMousemove.Layer>
                     </li>
                 </ul>
             </ParallaxMousemove>
-
         )
     }
 }
