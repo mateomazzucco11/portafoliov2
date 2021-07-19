@@ -1,7 +1,6 @@
 import React from 'react';
 import './Footer.scss';
 
-import { BrowserRouter, Route, Link } from 'react-router-dom'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';

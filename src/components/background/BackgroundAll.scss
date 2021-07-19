@@ -10,7 +10,6 @@
         width: 100%;
         div {
             img {
-                top: -145px;
                 width: 65%;
                 object-fit: cover;
                 direction: rtl;
@@ -20,6 +19,7 @@
                 z-index: -6;
                 position: absolute;
                 right: 30px;
+                height: 100%;
             }
         }
     }
