@@ -40,9 +40,7 @@ export default function Project2() {
                     <ItemHome
                         titleText='Project'
                         textText='Projects i Did'
-                        toButton='/project'
                         buttonText='See projects'
-                        toImage='/project'
                         imageSrc={projectImage}
                         altImage='Project'
                         imageClassname='more-height'

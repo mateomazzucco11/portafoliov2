@@ -1,64 +1,21 @@
 @media screen and (max-width: 540px) {
+    .content-img {
+        li{
+            div{
+                img {
+                    position: inherit !important;
+                    width: 100% !important;
+                    right: auto !important;
+                }
+            }
+        }
+    }
     .container.header {
         .title-h1 {
             left: 18px;
         }
         .container.navbar {
             right: 18px;
-        }
-    }
-    .fp-tableCell {
-        div { 
-            .content-img {
-                li{
-                    div {
-                        img {
-                            top: 250px;
-                            width: 85%;
-                            object-fit: cover;
-                            direction: rtl;
-                            margin: 0;
-                            padding: 0;
-                            opacity: 1;
-                            z-index: -6;
-                            position: absolute;
-                            right: 30px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #fp-nav.fp-right {
-        bottom: -35px;
-        left: 50% !important;
-        top: auto !important;
-        transform: rotate(-90deg) !important;
-        ul{
-            li {
-                a {
-                    height: 4px;
-                    span {
-                        width: 14px !important;
-                        border-radius: 5px;
-                        height: 4px;
-                        margin: -2px 0 0 -2px;
-                    }
-                    span:hover {
-                        height: 4px;
-                        width: 21px !important;
-                        margin: -2px 0 0 -2px;
-                    }
-                }
-                a.active {
-                    span {
-                        width: 28px !important;
-                        border-radius: 5px;
-                        height: 4px;
-                        margin: -2px 0 0 -2px;
-                    }
-                }
-            }
         }
     }
     .container-nav.out.active {

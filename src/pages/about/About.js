@@ -49,9 +49,7 @@ export default function About2() {
                         <ItemHome
                             titleText='About me'
                             textText='I love Coding, Technology, Travel, and play Games'
-                            toButton='/about'
                             buttonText='More about me'
-                            toImage='/about'
                             imageSrc={aboutImage}
                             altImage='About'
                             imageClassname='more-height'

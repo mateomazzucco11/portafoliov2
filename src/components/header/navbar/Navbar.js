@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import backgroundNav from '../../../videos/backgroundNav.mp4'
@@ -32,6 +32,7 @@ const search = {
 const Navbar = () => {
     const [active, setActive] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
+    const history = useHistory();
     return (
         <>
             <div className='container navbar'>
@@ -92,10 +93,10 @@ const Navbar = () => {
                             transition={{ duration: .8, delay: 1.5 }}
                         >
                             <div className='content-right'>
-                                <Link to='/#Home' >Home</Link>
-                                <Link to='/#About' >About</Link>
-                                <Link to='/#Project'  >Projects</Link>
-                                <Link to='/#Contact'  >Contact</Link>
+                                <a href='#Home' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Home</a>
+                                <a href='#About' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>About</a>
+                                <a href='#Project' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Projects</a>
+                                <a href='#Contact' onClick={() => setActive(!active) & setIsOpen(isOpen => !isOpen)}>Contact</a>
                                 <a href='/docs/Resume.pdf' download>Resume</a>
                             </div>
                         </motion.nav>
