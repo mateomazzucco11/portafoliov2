@@ -22,6 +22,7 @@ const Fullpagescroll = () => {
                 scrollingSpeed={1150}
                 recordHistory={true}
                 anchors={['Home', 'About', 'Project', 'Contact']}
+
                 render={() => {
                     return (
                         <>

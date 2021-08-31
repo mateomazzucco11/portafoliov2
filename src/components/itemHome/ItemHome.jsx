@@ -7,7 +7,21 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
 
-export const ItemHome = ({ classNameTitle, titleText, subtitleText, afterText, textText, buttonText, toButton, toImage, imageSrc, altImage, addSocial, imageClassname, scrollDown }) => {
+export const ItemHome = ({
+    classNameTitle,
+    titleText,
+    subtitleText,
+    afterText,
+    textText,
+    buttonText,
+    toButton,
+    toImage,
+    imageSrc,
+    altImage,
+    addSocial,
+    imageClassname,
+    scrollDown
+}) => {
     return (
         <>
             <BackgroundAll />

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import backgroundNav from '../../../videos/backgroundNav.mp4'
@@ -32,7 +31,6 @@ const search = {
 const Navbar = () => {
     const [active, setActive] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
-    const history = useHistory();
     return (
         <>
             <div className='container navbar'>

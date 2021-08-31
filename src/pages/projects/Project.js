@@ -9,9 +9,7 @@ import './Project.scss'
 import Header from '../../components/header/Header';
 import Arrow from '../../components/return/Arrow';
 import projectImage from '../../images/project-image.jpg';
-
-
-
+import movieApp from '../../images/MovieApp.png';
 
 export default function Project2() {
     const [change, setChange] = useState('change');
@@ -66,13 +64,10 @@ export default function Project2() {
                             verticalSwipe='standard'
                         >
                             <div>
-                                <img src={projectImage} alt='ProjectImage' />
+                                <img src={movieApp} alt='ProjectImage' />
                                 <div>
                                     <div>
-                                        <a target='_blank' href='#'>Watch online</a>
-                                    </div>
-                                    <div>
-                                        <a target='_blank' href='#'>See code</a>
+                                        <a target='blank' href='https://github.com/mateomazzucco11/Movie-Login-Mateo'>See code</a>
                                     </div>
                                 </div>
                             </div>
