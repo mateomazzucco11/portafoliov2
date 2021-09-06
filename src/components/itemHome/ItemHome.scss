@@ -1,6 +1,6 @@
 .left-content {
     position: absolute;
-    width: 100%;
+    width: fit-content;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -103,6 +103,7 @@
         background: #000123;
         border-radius: 5px;
         box-shadow: 8px 8px 25px #000123;
+        z-index: 10000;
         img {
             object-fit:cover;
             width: 100%;

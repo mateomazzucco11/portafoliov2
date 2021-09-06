@@ -1,4 +1,42 @@
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1364px) {
+    .aboutMe.max-width {
+        .container-aboutMe {
+            .second-about-section{
+                .max-width{
+                    .about-section-left {
+                        position: unset;
+                    }
+                    .about-section-right {
+                        width: 80%;
+                    }
+                }
+            }
+            .three-about-section {
+                .max-width {
+                    .about-section-bottom {
+                        margin-left: auto;
+                    }
+                }
+            }
+            .four-about-section {
+                margin: 0;
+                .max-width {
+                    .about-section-bottom {
+                        height: 85%;
+                        .container-skills {
+                            margin-left: auto;
+                            ul {
+                                margin-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
     .content-img {
         li{
             div{

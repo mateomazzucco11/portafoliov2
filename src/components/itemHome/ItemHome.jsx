@@ -58,11 +58,15 @@ export const ItemHome = ({
                                 </a>
                             </div>
                         )}
-                        {buttonText && (
+                        {
+                            (!buttonText)
+                            ?
+                            null
+                            :
                             <div className='content-button'>
                                 <Link to={toButton}>{buttonText}</Link>
                             </div>
-                        )}
+                        }
                     </div>
                 </div>
                 {scrollDown && (

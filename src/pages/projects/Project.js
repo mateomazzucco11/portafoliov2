@@ -10,6 +10,7 @@ import Header from '../../components/header/Header';
 import Arrow from '../../components/return/Arrow';
 import projectImage from '../../images/project-image.jpg';
 import movieApp from '../../images/MovieApp.png';
+import portfolioApp from '../../images/portfolioApp.png';
 
 export default function Project2() {
     const [change, setChange] = useState('change');
@@ -38,7 +39,6 @@ export default function Project2() {
                     <ItemHome
                         titleText='Project'
                         textText='Projects i Did'
-                        buttonText='See projects'
                         imageSrc={projectImage}
                         altImage='Project'
                         imageClassname='more-height'
@@ -68,6 +68,18 @@ export default function Project2() {
                                 <div>
                                     <div>
                                         <a target='blank' href='https://github.com/mateomazzucco11/Movie-Login-Mateo'>See code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <img src={portfolioApp} alt='ProjectImage' />
+                                <div>
+                                    <div>
+                                        <a target='blank' href='https://github.com/mateomazzucco11/portafoliov2'>See code</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <a target='blank' href='https://mateoportfolio.vercel.app/'>Watch online</a>
                                     </div>
                                 </div>
                             </div>
