@@ -20,6 +20,14 @@ import htmlSkill from '../../images/html.png'
 import jsSkill from '../../images/js.png'
 import linuxSkill from '../../images/linux.png'
 import sassSkill from '../../images/sass.png'
+import nodeSkill from '../../images/node.png'
+import expressSkill from '../../images/express.png'
+import agileSkill from '../../images/agile.png'
+import mysqlSKill from '../../images/mysql.png'
+import reduxSkill from '../../images/redux.png'
+import responsiveSkill from '../../images/responsiveDesign.png'
+import workbenchSkill from '../../images/workbench.png'
+import npmSkill from '../../images/npm.png'
 
 export default function About2() {
     const [change, setChange] = useState('change');
@@ -134,6 +142,18 @@ export default function About2() {
                                             <div><img src={reactSkill} title='React.js' alt='React' /></div>
                                             <h2>React js</h2>
                                         </li>
+                                        <li>
+                                            <div><img src={nodeSkill} title='Node.js' alt='Node.js' /></div>
+                                            <h2>Node.js</h2>
+                                        </li>
+                                        <li>
+                                            <div><img src={reduxSkill} title='Redux' alt='Redux' /></div>
+                                            <h2>Redux</h2>
+                                        </li>
+                                        <li>
+                                            <div><img src={mysqlSKill} title='MySQL' alt='MySQL' /></div>
+                                            <h2>MySQL</h2>
+                                        </li>
                                     </ul>
                                     <ul>
                                         <li>
@@ -144,11 +164,30 @@ export default function About2() {
                                             <div><img src={githubSkill} title='GitHub' alt='GitHub' /></div>
                                             <h2>GitHub</h2>
                                         </li>
+                                        <li>
+                                            <div><img src={agileSkill} title='AGILE' alt='Agile' /></div>
+                                            <h2>AGILE</h2>
+                                        </li>
+                                        <li>
+                                            <div><img src={workbenchSkill} title='Workbench' alt='Workbench' /></div>
+                                            <h2>Workbench</h2>
+                                        </li>
+                                        <li>
+                                            <div><img src={responsiveSkill} title='Responsive design' alt='Responsive design' /></div>
+                                            <h2>Responsive </h2>
+                                        </li>
+                                        <li>
+                                            <div><img src={npmSkill} title='NPM' alt='NPM' /></div>
+                                            <h2>NPM</h2>
+                                        </li>
+                                        <li>
+                                            <div><img src={expressSkill} title='Express' alt='Express' /></div>
+                                            <h2>Express</h2>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <Footer />
                     </section>
                 </div>
             </div>
